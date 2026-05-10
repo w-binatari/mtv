@@ -9,17 +9,17 @@
 
 :root {
   /* Colors */
-  --clr-green:       #1B3A2D;
-  --clr-green-mid:   #2A5241;
-  --clr-green-light: #3D6B52;
-  --clr-gold:        #C9973B;
-  --clr-gold-light:  #E8B96A;
-  --clr-bg:          #FAFAF8;
+  --clr-green:       #031633;
+  --clr-green-mid:   #072E73;
+  --clr-green-light: #0B63CE;
+  --clr-gold:        #0B63CE;
+  --clr-gold-light:  #47B7FF;
+  --clr-bg:          #F7FBFF;
   --clr-white:       #FFFFFF;
-  --clr-text:        #1A1A1A;
-  --clr-muted:       #6B6B6B;
-  --clr-border:      #E0DDD6;
-  --clr-overlay:     rgba(12, 28, 20, 0.60);
+  --clr-text:        #0B1F3A;
+  --clr-muted:       #6B7A90;
+  --clr-border:      #D4E5F9;
+  --clr-overlay:     rgba(3, 22, 51, 0.60);
 
   /* Typography */
   --font-serif:  'Cormorant Garamond', Georgia, serif;
@@ -312,6 +312,7 @@ h1, h2, h3, h4 { font-family: var(--font-serif); line-height: 1.15; font-weight:
   font-family: var(--font-serif);
   font-size: clamp(32px, 4vw, 52px);
   line-height: 1.12;
+  color: var(--clr-green-mid);
 }
 .section-header__desc {
   font-size: 17px; color: var(--clr-muted); max-width: 560px; margin-top: 16px;
@@ -338,7 +339,7 @@ h1, h2, h3, h4 { font-family: var(--font-serif); line-height: 1.15; font-weight:
 .project-card:hover .project-card__img-wrap img { transform: scale(1.06); }
 .project-card__overlay {
   position: absolute; inset: 0;
-  background: linear-gradient(to top, rgba(12,28,20,0.55) 0%, transparent 60%);
+  background: linear-gradient(to top, rgba(3,22,51,0.55) 0%, transparent 60%);
   display: flex; align-items: flex-end; padding: 20px;
   opacity: 0; transition: opacity var(--dur) var(--ease);
 }
@@ -457,7 +458,7 @@ h1, h2, h3, h4 { font-family: var(--font-serif); line-height: 1.15; font-weight:
 .testimonial-card__stars { color: var(--clr-gold); font-size: 14px; margin-bottom: 6px; }
 
 /* ---- Footer ---- */
-.footer { background: #0F2218; color: rgba(255,255,255,0.7); }
+.footer { background: var(--clr-green); color: rgba(255,255,255,0.7); }
 .footer__top { padding: 72px 24px 48px; }
 .footer__grid { max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; }
 .footer__brand-logo { font-family: var(--font-serif); font-size: 26px; font-weight: 700; color: var(--clr-white); margin-bottom: 16px; display: flex; align-items: center; gap: 10px; }
